@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="bundle.js"></script>
+    <title>Blockchain Demo</title>
+  </head>
+
+  <body>
+    <h1 class="heading-primary">BlockChain Demo</h1>
+
+    <div class="container grid grid--5-cols">
+      <div class="card">
+        <h2 class="card-title">Genesis Block</h2>
+        <div class="bc-form">
+          <div>
+            <label for="data">Data</label>
+            <input id="data1" name="data" type="text" />
+          </div>
+          <div>
+            <label for="nonce">Nonce</label>
+            <input id="nonce1" name="nonce" type="number" />
+          </div>
+          <div>
+            <label for="prev-hash">Previous Block Hash</label>
+            <input id="prev-hash1" name="prev-hash" type="text" value="0000" />
+          </div>
+          <div>
+            <label for="hash-field">Node Block Hash</label>
+            <input id="hash-field1" name="hash-field" type="text" />
+          </div>
+
+          <div>
+            <p class="status-label">Status:</p>
+            <p class="status">Valid</p>
+          </div>
+          <div class="button-area">
+            <button class="btn btn--mine" onclick="mine()">Mine</button>
+            <button class="btn btn--hash" onclick="hash()">Hash</button>
+            <button class="btn btn--gen" onclick="generate()">Gen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Next Card -->
+    </div>
+  </body>
+</html>
